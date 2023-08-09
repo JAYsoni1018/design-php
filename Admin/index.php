@@ -1,0 +1,3 @@
+<?php
+include('./hero.php')
+?>

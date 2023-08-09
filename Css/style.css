@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+section {
+  padding: 5rem 9%;
+}
+
+.heading-2{
+    width: 45rem;
+    text-align: left;
+    margin-bottom: 2rem;
+    display: flex;
+}
+.heading {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+
+
+.heading-2 h1 {
+  font-size: 4rem;
+
+  padding-top: .5rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  font-size: 2rem;
+  border: 0.2rem solid #000;
+  cursor: pointer;
+  font-weight: bolder;
+  border-radius: .5rem;
+  color: #000;
+}
+ .btn:hover {
+  background: none;
+  color: #000;
+}
+
+
+
+
+
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+   -ms-flex-pack: justify;
+   justify-content: space-between ; 
+  background: #fff;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 1rem 4%;
+}
+
+.header .logo {
+  font-size: 2.5rem;
+  color: #000;
+}
+
+.header .navbar a {
+  margin: 0 1rem;
+  font-size: 2rem;
+  color: #000000;
+}
+
+.header .btn {
+  margin-top: 0;
+
+}
+
+#menu-btn {
+  cursor: pointer;
+  font-size: 3rem;
+  display: none;
+}
+
+
+.home {
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background: #f6e4d5;
+}
+
+.home .image {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 42rem;
+  flex: 1 1 42rem;
+  margin-top: 5rem;
+}
+
+.home .image img {
+  width: 100%;
+ 
+}
+
+.home .content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 42rem;
+  flex: 1 1 42rem;
+}
+
+.home .content h3 {
+  font-size: 6rem;
+}
+
+.home .content p {
+  font-size: 2rem;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.services {
+  background: #f2f3b0;
+  
+}
+
+
+.services .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.services .box-container .box {
+  background: #fff;
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: .5rem;
+}
+
+.services .box-container .box img {
+  height: 8rem;
+  margin-bottom: .7rem;
+}
+
+.services .box-container .box h3 {
+  font-size: 2.2rem;
+  padding: 1.5rem 0;
+}
+
+.services .box-container .box p {
+  line-height: 2;
+  font-size: 1.7rem;
+}
+
+.features .box-container .box {
+ 
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 2rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 50vh;
+
+  margin-bottom: 3rem;
+}
+
+.features .box-container .box:last-child {
+  margin-bottom: 0;
+}
+
+.features .box-container .box:nth-child(odd) {
+  -webkit-box-orient: horizontal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row-reverse wrap;
+}
+
+.features .box-container .box .image {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 42rem;
+  flex: 1 1 42rem;
+}
+
+.features .box-container .box .image img {
+  width: 100%;
+}
+
+.features .box-container .box .content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 42rem;
+  flex: 1 1 42rem;
+}
+
+.features .box-container .box .content h3 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.features .box-container .box .content .box-para {
+  padding: 1.5rem 0;
+  color: #181818;
+  font-size: 2rem;
+}
+.features .box-container .box .content .box-subpara {
+  padding: 1.5rem 0;
+  color: #353535;
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+}
+
+
+
+/* .footer {
+  background: #aaeba8;
+} */
+
+.footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a {
+  font-size: 2rem;
+  color: #000;
+  display: block;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a:hover {
+  text-decoration: underline;
+}
+
+.footer .credit {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 2rem;
+  }
+
+  section {
+    padding: 3rem 2rem;
+  }
+
+  .home .content h3 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+  }
+
+  #menu-btn.fa-times {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  .header .btn {
+    display: none;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    border-top: 0.2rem solid #000;
+    background: #fff;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+  }
+
+  .header .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header .navbar a {
+    display: block;
+    margin: 0;
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .heading h1 {
+    font-size: 3rem;
+  }
+}
